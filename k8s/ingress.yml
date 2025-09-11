@@ -71,21 +71,16 @@ kind: Ingress
 metadata:
   name: travel-api-ingress
   namespace: new-travel-api
-  annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
-  tls:
-    - hosts:
-        - travel-api.local
-      secretName: travel-api-tls
   rules:
-    - host: travel-api.local
+    - host: travel-api.test
       http:
         paths:
-          - path: /
+          - path: /api
             pathType: Prefix
             backend:
               service:
                 name: travel-api-service
                 port:
                   number: 8443
+
