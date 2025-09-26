@@ -1,0 +1,22 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: travel-api-deployment
+  namespace: new-travel-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: travel-api
+  template:
+    metadata:
+      labels:
+        app: travel-api
+    spec:
+      containers:
+      - name: travelapi
+        image: container122333/apiimage:1
+
+        ports:
+          - containerPort: 8442
