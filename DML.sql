@@ -1,9 +1,6 @@
-INSERT INTO packages (id,accomodation, activities, food, packages_name, place_name, total_price, transportation)
+INSERT INTO packages (accomodation, activites, food, packages_name, place_name, total_price, transportation)
 VALUES
-(1,'Hotel Deluxe', 'Sightseeing, Hiking', 'Breakfast, Dinner', 'Adventure Trip', 'Ooty', 15000.00, 'Bus'),
-(2,'Resort Stay', 'Boating, Trekking', 'All Meals', 'Nature Escape', 'Kodaikanal', 18000.00, 'Car'),
-(3,'Cottage', 'Safari, Photography', 'Breakfast', 'Wildlife Tour', 'Mudumalai', 12000.00, 'Jeep'),
-(4,'Guest House', 'Temple Visit, City Tour', 'Breakfast, Lunch', 'Cultural Trip', 'Madurai', 10000.00, 'Bus');
-
-
-
+(1,2000, 'Sightseeing, Temple Visit', 1500, 'Spiritual Package', 'Varanasi', 12000, 3000),
+(2,3500, 'Trekking, Camping', 2500, 'Adventure Package', 'Manali', 25000, 8000),
+(3,1800, 'Beach Walk, Water Sports', 2000, 'Beach Holiday', 'Goa', 18000, 5000),
+(4,4000, 'Wild Safari, Bird Watching', 3000, 'Wildlife Tour', 'Jim Corbett', 22000, 7000);
